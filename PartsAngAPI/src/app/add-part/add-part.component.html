@@ -1,0 +1,8 @@
+<div>
+    <h2>Add Computer Part Form</h2>
+        Name: <input type="text" [(ngModel)]="newpart.name" /><br/>
+        Description: <input type="text" [(ngModel)]="newpart.description" /><br/>
+        Price: $<input type="number" [(ngModel)]="newpart.price" /><br/>
+        Quantity: <input type="number" [(ngModel)]="newpart.quantity" /><br/>
+        <button (click)="addPart()">Add Part!</button><br/>
+</div>

@@ -1,0 +1,10 @@
+<div>
+    <ng-container *ngIf="part"> 
+        <ul> 
+            <li> Name: {{ part.name }}, ID: {{ part.id }} </li> <br/>
+            <li>Description: {{ part.description }} </li><br/>
+            <li>Price: ${{ part.price }} </li><br/>
+            <li> Quantity: {{ part.quantity }} </li> <br/></ul>
+        <button (click)="emitDeleteEvent()">Delete</button> <br/><br/>
+    </ng-container>
+</div>

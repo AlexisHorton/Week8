@@ -1,0 +1,7 @@
+<div>
+    <ng-container *ngFor="let band of allbands">
+        <app-show-band [band]="band" (deleteme)="deleteBand($event)"></app-show-band><br/>
+    </ng-container>
+</div>
+
+<app-add-band (addband)="addBand($event)"></app-add-band>

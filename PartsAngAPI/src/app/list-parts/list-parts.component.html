@@ -1,0 +1,11 @@
+<div>
+    <h2>Part details:</h2>
+    <ng-container *ngFor="let part of allparts">
+        <app-one-computer-part [part]="part" (deleteme)="deletePart($event)">      
+        </app-one-computer-part>
+    </ng-container>
+</div>
+
+<div>
+    <app-add-part (addpart)="addPart($event)"></app-add-part>
+</div>

@@ -1,0 +1,8 @@
+<div>
+    <h2>Add Band Form</h2>
+        Name: <input type="text" [(ngModel)]="newband.name" /><br/>
+        Best Album: <input type="text" [(ngModel)]="newband.bestalbum" /><br/>
+        Number of Members: <input type="number" [(ngModel)]="newband.members" /><br/>
+        Year Founded: <input type="number" [(ngModel)]="newband.founded" /><br/>
+        <button (click)="addBand()">Add Band!</button><br/>
+</div>
